@@ -1,0 +1,8 @@
+table.catalog {
+	width: 100%;
+}
+
+table.catalog td {
+	border: 2px solid;
+	text-align: center;
+}

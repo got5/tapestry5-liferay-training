@@ -1,0 +1,23 @@
+<html t:type="layout" t:title="Catalog"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+	xmlns:p="tapestry:parameter">
+
+	<table class="catalog">
+		<tr>
+			<td t:type="loop" t:source="products" t:value="currentProduct">
+				<img src="${productImage}" alt="${currentProduct.title}" /> 
+				<br />
+				<h3>${currentProduct.title}</h3> 
+				${currentProduct.price} &#8364; 
+				<a t:type="actionLink" t:id="linkShowDescription" t:zone="${zoneDescriptionId}" 
+					t:context="currentProduct.description">
+					<img src="${asset:context:images/icons/zoom.gif}" />
+				</a> 
+			</td>
+		</tr>
+	</table>
+	
+	<div t:type="zone" t:id="zoneDescription">
+		<t:OutputRaw value="productDescription" />
+	</div>
+</html>

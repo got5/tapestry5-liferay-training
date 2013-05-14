@@ -1,0 +1,8 @@
+<html t:type="layout" t:title="Basket"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+	xmlns:p="tapestry:parameter">
+	
+	<h3>${msgProductRemoved}</h3>
+	
+	<h3>${nbItems} item(s) in your basket</h3>
+</html>
